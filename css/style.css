@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+*{
+	margin:0px;
+	padding:0px;
+	color:#FFD700;
+	font-family: 'Poppins', sans-serif;
+}
+::selection{
+	background-color:#012C7C;
+	color:#FFD700;
+}
+body{
+	background-color:#012C7C;
+	background-attachment:fixed;
+	min-height:100%;
+}
+.centriranje{
+	margin:0px auto;
+}
+header{
+	background-color:#012C7C;
+	border-bottom:10px solid #FFD700;
+	padding:20px;
+	position:sticky;
+	-webkit-position:sticky;
+	top:0;
+	z-index:4;
+}
+.header-section, .meni, .contact-ico{
+	display:flex;
+	align-items:center;
+}
+.logo{
+	flex:1;
+}
+.logo h1{
+	font-weight:300;
+}
+.logo h1 a{
+	list-style-type:none;
+	text-decoration:none;
+}
+.header-footer{
+	color:white;
+	font-weight:700;
+	text-transform:uppercase;
+}
+nav{
+	flex:2;
+}
+.meni{
+	justify-content:space-around;
+	list-style-type:none;
+}
+.meni li a{
+	text-decoration:none;
+	text-transform:uppercase;
+	margin-bottom:10px;
+	transition:0.5s all;
+}
+.meni li a:hover{
+	color:white;
+	border-bottom:4px solid #FFD700;
+}
+.contact-ico{
+	flex:1;
+	justify-content:flex-end;
+	font-size:30px;
+}
+.fas:hover{
+	color:white;
+	transition:0.5s;
+}
+.cleaner{
+	clear:both;
+}
+/*kraj headera*/
+.hero-section{
+	display:flex;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	height:90vh;
+}
+.video{
+	width:100%;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.overlay-text{
+	padding:20px 30px;
+	align-items:center;
+	width:100%;
+	height:100%;
+	background-color:rgba(0, 0, 0, 0.6);
+	position:absolute;
+	Z-index:2;
+}
+.text{
+	padding:40px 50px;
+	border:1px solid #FFD700;
+	background-color:rgba(0, 0, 0, 0.5);
+	position:absolute;
+	left:25%;
+	top:30%;
+}
+.text h3{
+	margin-bottom:4%;
+	color:white;
+	font-size:20px;
+}
+.text p{
+	margin-bottom:3%;
+	font-size:17px;
+	font-weight:100;
+}
+.text a {
+	font-weight:300;
+	position:absolute;
+	text-decoration:none;
+	text-transform:uppercase;
+	padding:10px 10px;
+	border:1px solid #FFD700; 
+	color:white;
+	left:70%;
+	bottom:30%;
+}
+.text a:hover{
+	transition:.7s;
+	color:#FFD700;
+	background-color:#fff;
+}
+/*kraj maina*/
+footer{
+	border-top:12px solid #FFD700;
+	width:100%;
+	padding:1% 0;
+	background-color:#012C7C;
+}
+.footer-container{
+	padding:0 20px;
+	display:flex;
+	align-items:center;
+	justify-content: space-between;
+}
+.logo-text h4{
+	font-size:20px;
+}
+.social-ico{
+	margin:30px 0;
+}
+.social-ico	a{
+	margin-right:25px;
+	transition:.5s linear;
+	font-size:30px;
+}
+.fab{
+	transition:0.5s linear;
+}
+.fab:hover{
+	color:#fff;
+	border-left:6px solid #FFD700;
+}
+.footer-right h4{
+	font-size:20px;
+}
+.border{
+	width:70px;
+	height:4px;
+	background-color:#FFD700;
+	margin-bottom:50px;
+}
+.newsletter{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	margin-top:10px;
+}
+.bemail{
+	padding:10px 20px;
+	border:none;
+	background-color:#012C7C;
+	border-bottom:2px solid #FFD700;
+	outline:none;
+	width:230px;
+}
+.bemail:after{
+	border-color:#FFF;
+}
+.btn{
+	color:black;
+	margin-left:20px;
+	padding:5px 10px;
+	background-color:#FFD700;
+	border:none;
+	text-decoration:none;
+	transition:.5s linear;
+	color:#012C7C;
+	cursor:pointer;
+}
+.btn:hover{
+	opacity:0.8;
+}
+/* STRANICA USLUGE*/
+
+.services-container{
+	width:100%
+}
+.details{
+	text-align:center;
+}
+.details h2{
+	color:#FFF;
+	font-size:45px;
+	margin-top:30px;
+	margin-bottom:20px;
+}
+.main-box{
+	display:flex;
+	justify-content:center;
+}
+.box{
+	width:20%;
+	height:50%;
+	border-radius:10%;
+	margin:6.6% 3%;
+	text-align:center;
+	padding:40px;
+	border:2px solid #FFF;
+	background-color:#5ba8cd;
+	transition:0.7s all;
+}
+.box h4{
+	font-size:30px;
+	color:#FFF;
+}
+hr{
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.box p{
+	text-align:left;
+	color:#012C7C;
+}
+.box a{
+	color:#012C7C;
+	text-decoration:none;
+	padding:5px 15px;
+	margin-top:25px;
+	display:inline-block;
+	border:1px solid #FFF;
+	text-transform:uppercase;
+	transition:0.5s all;
+}
+.box a:hover{
+	background-color:#FFF;
+}
+.box:hover{
+	cursor:pointer;
+	box-shadow: 5px 10px #fff;
+}
+/*gallerija*/
+.hero-gallery{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.gallery-container{
+	margin-top:7%;
+	margin-bottom:7%;
+	position:relative;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:wrap;
+	padding:30px;
+}
+.gallery-container .card{
+	position:relative;
+	max-width:300px;
+	height:350px;
+	border:2px solid #FFD700;
+	background-color:#5ba8cd;
+	margin:30px 10px;
+	padding:20px 15px;
+	display:flex;
+	flex-direction:column;
+	box-shadow:0 5px 20px rgba(0,0,0,0.5);
+	transition:0.5s	 all ease-in-out;
+}
+.gallery-container .card:hover{
+	height:600px;
+}
+.gallery-container .card .imgBx{
+	position:relative;
+	width:260px;
+	height:260px;
+	top:-60px;
+	left:20px;
+	z-index:1;
+	box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+.gallery-container .card .imgBx img{
+	max-width:100%;
+	border-radius:4px;
+}
+.gallery-container .card .card-content{
+	position:relative;
+	margin-top:-140px;
+	padding:10px 15px;
+	text-align:center;
+	color:#012C7C;
+	visibility:hidden;
+	opacity:0;
+	transition:0.3s	 all ease-in-out;
+}
+.gallery-container .card:hover .card-content{
+	visibility:visible;
+	opacity:1;
+	margin-top:190px;
+	transition-delay:0.3s;
+}
+/*KONTAKT*/
+.container-contact{
+	width:80%;
+	margin:50px auto;
+}
+.container-contact h2{
+	margin-bottom:10px;
+}
+.container-contact p{
+	margin-bottom:10px;
+}
+.contact-box{
+	background-color:white;
+	display:flex;
+}
+.contact-left{
+	flex-basis:60%;
+	padding:40px 60px;
+}
+.contact-right{
+	flex-basis:40%;
+	padding:40px;
+	background-color:#5ba8cd;
+}
+.input-row{
+	display:flex;
+	justify-content:space-between;
+	margin-bottom:20px;
+}
+.input-row .input-group{
+	flex-basis:45%;
+}
+input[text,email]{
+	width:100%;
+	color:black;
+}
+/*o autoru*/
+.about{
+	width:100%;
+	margin-top:5%;
+	margin-bottom:5%;
+	margin:0px auto;
+	
+}
+.about-container{
+	padding-top:5%;
+	padding-bottom:5%;
+	margin-left:10%;
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+}
+.about-text{
+	align-items:center;
+	justify-content:center;
+	padding:50px 30px;
+	border-radius:10px;
+	background-color:#5ba8cd;
+	border:2px solid #FFD700;
+}
+.about-text h2{
+	color:#FFD700;
+	text-align:center;
+	margin-bottom:20px;
+}
+.about-text p{
+	text-align:center;
+	color:white;
+}
+.about-slika{
+	width:50%;
+	height:60%;
+	align-items:center;
+}
+img{
+	width:350px;
+	height:500px;
+	border:2px solid #FFD700;
+	border-radius:10px;
+}
